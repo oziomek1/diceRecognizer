@@ -1,9 +1,10 @@
 # diceRecognizer
 (in the making) find and crop multi color dice image
 
-Example of working on pine wood color dice
-
-<img src="https://raw.githubusercontent.com/oziomek1/diceRecognizer/master/screenshots/1.jpg">
-<img src="https://raw.githubusercontent.com/oziomek1/diceRecognizer/master/screenshots/2.jpg">
-<img src="https://raw.githubusercontent.com/oziomek1/diceRecognizer/master/screenshots/3.jpg">
-<img src="https://raw.githubusercontent.com/oziomek1/diceRecognizer/master/screenshots/4.jpg">
+Dice regoznizer using OpenCVs:
+- cvtColor conversion to grayscale
+- absdiff between to frames
+- image segmentation by threshold - THRESH_OTSU and THRESH_BINARY
+- edge detection using Canny algorithm ( Optimal detector )
+- finding contours via RETR_EXTERNAL and CHAIN_APPROX_SIMPLE
+- drawing rectangles
